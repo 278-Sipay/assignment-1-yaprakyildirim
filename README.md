@@ -10,7 +10,11 @@ Controller uzerindeki POST methodu attributelar yerinde FluentValidation ile ça
 1- FluentValidation kütüphanesini kullanarak belirli kurallar tanımlanmıştır:
 
 2- Name ve Lastname: Ad ve soyadın boş olmamalı ve 5 ile 100 karakter arasında olmalıdır.
+
 3- Phone: Telefon numarası boş olmamalı ve sadece rakamlardan oluşmalıdır.
+
 4- AccessLevel: Erişim seviyesi 1 ile 5 arasında olmalıdır.
+
 5- Salary: Maaş, erişim seviyesine göre belirlenen maksimum değeri aşmamalıdır (örn., seviye 1 için 10.000'e kadar) ve genel olarak 5.000 ile 50.000 arasında olmalıdır.
+
 6- Bu kuralların dışında bir değer girilirse, belirtilen hata mesajları döndürülür. Bu, veri girişi sırasında uygunluk ve tutarlılık sağlamak için kullanılır.
